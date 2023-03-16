@@ -1,6 +1,6 @@
 import User from "./User.js";
 // classe Filha
-class Admin extends User{
+export default class Admin extends User{
     constructor(nome, email, nascimento, role = 'admin', ativo = true) {
         super(nome, email, nascimento, role, ativo);
     }
@@ -10,5 +10,5 @@ class Admin extends User{
     }
 }
 
-const novoAdmin = new Admin('Rodrigo', 'r@r.com', '1999-01-20')
-console.log(novoAdmin.criarCurso('Desenvolvimento Web Full stack', 20))
+// const novoAdmin = new Admin('Rodrigo', 'r@r.com', '1999-01-20')
+// console.log(novoAdmin.criarCurso('Desenvolvimento Web Full stack', 20))
