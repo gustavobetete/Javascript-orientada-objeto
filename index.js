@@ -12,3 +12,6 @@ console.log(novoDocente.exibirInfos())
 
 // novoUser.#nome = 'Gabriel'
 // console.log(novoUser.#nome) // campo privado, não deixa trocar
+// console.log(novoUser.#montaObjetoUser()) // Private field '#montaObjetoUser' must be declared in an enclosing class
+
+console.log(novoAdmin.nome) //Ana Beatriz (função get do User)
