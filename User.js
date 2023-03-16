@@ -13,7 +13,7 @@ export default class User {
         this.#ativo = ativo
     }
 
-    get nome(){
+    getNome(){
         return this.#nome
     }
 
@@ -33,7 +33,7 @@ export default class User {
         return this.#ativo
     }
 
-    set nome(novoNome) {
+    setNome(novoNome) {
         if(novoNome === ''){
             throw new Error('Formato invalido!')
         }
@@ -41,7 +41,7 @@ export default class User {
     }
 
     exibirInfos() {
-        return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`
+        return `${this.getNome()}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`
     }
 }
 
