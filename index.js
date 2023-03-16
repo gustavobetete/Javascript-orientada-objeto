@@ -15,3 +15,5 @@ console.log(novoDocente.exibirInfos())
 // console.log(novoUser.#montaObjetoUser()) // Private field '#montaObjetoUser' must be declared in an enclosing class
 
 console.log(novoAdmin.nome) //Ana Beatriz (função get do User)
+novoAdmin.nome = 'André' // função set do User
+console.log(novoAdmin.nome) // André
