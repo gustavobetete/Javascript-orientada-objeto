@@ -5,6 +5,10 @@ export default class Admin extends User{
         super(nome, email, nascimento, role, ativo);
     }
 
+    exibirInfos() {
+        return `${this.getNome()}, ${this.role}, ${this.ativo}` // tecnica de polimorfismo ( utilizando função com mesma assinatura porem com comportamento diferente)
+    }
+
     criarCurso(nomeCurso, vagas){
         return `Curso de ${nomeCurso} criado com ${vagas} vagas`
     }
