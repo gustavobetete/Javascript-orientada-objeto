@@ -33,19 +33,15 @@ export default class User {
         return this.#ativo
     }
 
-    #montaObjetoUser(){
-        return ({
-            nome: this.#nome,
-            email: this.#email,
-            nascimento: this.#nascimento,
-            role: this.#role,
-            ativo: this.#ativo
-        })
+    set nome(novoNome) {
+        if(novoNome === ''){
+            throw new Error('Formato invalido!')
+        }
+      this.#nome = novoNome
     }
 
     exibirInfos() {
-        const objUser = this.#montaObjetoUser() // tem acesso ja que esta na classe User
-        return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}, ${objUser.role}, ${objUser.ativo}`
+        return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`
     }
 }
 
